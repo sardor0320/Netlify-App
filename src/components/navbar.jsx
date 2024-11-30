@@ -4,6 +4,8 @@ import logo from "../assets/img/Screenshot 2022-08-20 at 6.31 1 (Traced)@2x.png"
 import { RiSlashCommands2 } from "react-icons/ri";
 import { BsFillMoonFill } from "react-icons/bs";
 import { LuSun } from "react-icons/lu";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Navbar() {
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
@@ -104,14 +106,14 @@ function Navbar() {
               <div class="absolute inset-y-0 end-0 me-1 flex items-center ps-3 pointer-events-none">
                 <span class="sr-only">Search icon</span>
                 <span>
-                  <RiSlashCommands2 size={25} className="text-gray-500" />
+                  <RiSlashCommands2 size={25} className="text-gray-500 2xl:block hidden" />
                 </span>
               </div>
               <input
                 type="text"
                 className="hidden 2xl:block"
                 id="search-navbar"
-                class="w-[240px] p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#272F43;] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="w-[240px] 2xl:block hidden p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#272F43;] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search..."
               />
             </div>
@@ -139,10 +141,11 @@ function Navbar() {
                 />
               </svg>
             </button>
-            <button className="text-white mx-5">Sign in</button>
-            <button className="text-white border px-3 rounded-xl border-[gray]">
+            <button className=" 2xl:block hidden text-white mx-5">Sign in</button>
+            <button className=" 2xl:block hidden text-white border px-3 rounded-xl border-[gray]">
               Sign up
             </button>
+            <GiHamburgerMenu className="text-white text-2xl mt-2 ms-2 block 2xl:hidden " />
           </div>
           <div
             class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1"
