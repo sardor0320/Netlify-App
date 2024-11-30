@@ -80,7 +80,7 @@ function Navbar() {
             </ul>
           </div>
           <div class="flex md:order-2 text-white">
-            {/* <div className="text-2xl mr-2 mt-1">
+            <div className="text-2xl mr-2 mt-1">
               {theme === "dark" ? (
                 <button onClick={() => toggleMode("light")}>
                   <LuSun />
@@ -90,7 +90,7 @@ function Navbar() {
                   <BsFillMoonFill />
                 </button>
               )}
-            </div> */}
+            </div>
             <button
               type="button"
               data-collapse-toggle="navbar-search"
