@@ -80,7 +80,7 @@ function Navbar() {
             </ul>
           </div>
           <div class="flex md:order-2 text-white">
-            <div className="text-2xl mr-2 mt-1">
+            {/* <div className="text-2xl mr-2 mt-1">
               {theme === "dark" ? (
                 <button onClick={() => toggleMode("light")}>
                   <LuSun />
@@ -90,7 +90,7 @@ function Navbar() {
                   <BsFillMoonFill />
                 </button>
               )}
-            </div>
+            </div> */}
             <button
               type="button"
               data-collapse-toggle="navbar-search"
@@ -109,6 +109,7 @@ function Navbar() {
               </div>
               <input
                 type="text"
+                className="hidden 2xl:block"
                 id="search-navbar"
                 class="w-[240px] p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#272F43;] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search..."
@@ -168,7 +169,7 @@ function Navbar() {
               <input
                 type="text"
                 id="search-navbar"
-                class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block w-full p-2 ps-1 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-black dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search..."
               />
             </div>

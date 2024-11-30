@@ -63,7 +63,7 @@ const SupportSection = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-wrap gap-x-[13.95rem] gap-y-20 px-4 md:px-[9rem] md:mb-0 mb-[20rem]">
+      <div className="flex justify-center flex-wrap gap-x-[10.0rem] gap-y-20 px-4 md:px-[9rem] md:mb-0 mb-[20rem]">
         {(isMobile ? mobileImages : images).map((image, index) => (
           <div key={index} className="flex justify-center">
             <img
