@@ -74,7 +74,7 @@ const SupportSection = () => {
           </div>
         ))}
       </div>
-      <p className="text-center text-white text-lg my-10">
+      <p className="text-center text-white text-lg my-10 mt-[5rem]">
         Trusted by the world’s most ambitious teams.
       </p>
     </>
